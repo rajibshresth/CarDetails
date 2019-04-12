@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/title">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:text="Type and Run"
+        android:textSize="30dp"
+        style="@style/Views"/>
+    <TextView
+        android:text="Make"
+        android:id="@+id/txtMake"
+        style="@style/Views"
+        />
+    <EditText
+        style="@style/edit"
+        android:id="@+id/etCar"
+        android:textSize="15dp" />
+    <TextView
+        android:text="Year"
+        android:textSize="15dp"
+        android:id="@+id/txtYear"
+        style="@style/Views"
+        />
+    <EditText
+        style="@style/edit"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:id="@+id/etYear"/>
+    <TextView
+        android:text="Colour"
+        android:textSize="15dp"
+        android:id="@+id/txtColour"
+        style="@style/Views"
+        />
+    <EditText
+        style="@style/edit"
+        android:textSize="15dp"
+        android:id="@+id/ed_colour"/>
+    <TextView
+        android:text="Purchase Price"
+        android:textSize="15dp"
+        android:id="@+id/txtPrice"
+        style="@style/Views"
+        />
+    <EditText
+        style="@style/edit"
+        android:textSize="15dp"
+        android:id="@+id/ed_price"/>
+    <TextView
+        android:text="Engine Size"
+        android:textSize="15dp"
+        android:id="@+id/txtSize"
+       style="@style/Views"/>
+    <EditText
+        style="@style/edit"
+        android:textSize="15dp"
+        android:id="@+id/etSize"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Car"
+            android:id="@+id/btnCreate"
+            android:layout_margin="20dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Diesel"
+            android:id="@+id/btnDiesel"
+            android:layout_margin="20dp"
+            />
+    </LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="15dp"
+        android:id="@+id/txtResult"
+        style="@style/output"
+        android:layout_margin="20dp"
+        />
+    </LinearLayout>
+</ScrollView>
